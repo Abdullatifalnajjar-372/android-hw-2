@@ -1,0 +1,44 @@
+ 
+public class HelloWorld{
+
+    public static void main(String []args){
+      grade();
+    }
+
+
+    public static void grade(){
+
+        for( int i=0 ; i<10 ; i++){
+
+
+      double[] studentPercentage ={70,90,30,80,84,69,92,63,45};
+      char[] letterGrades = new char[10];
+
+      letterGrades[i] = gradeGenerator(studentPercentage[i]);
+       
+        }
+}
+
+
+        public static char gradeGenerator( double a){
+       char x = 'x';
+        if (a >= 90){
+            System.out.println("A");
+        }
+        else if(a >= 80 && a < 90){
+             System.out.println("B");
+        }
+        else if(a >= 70 && a< 80){
+            System.out.println("C");
+        }
+        else if(a >= 60 && a < 70){
+            System.out.println("D");
+        }
+        else{
+            System.out.println("F");
+        }
+        return x;
+    }
+}
+
+
